@@ -1,0 +1,539 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    border: 1px solid #F2F2F2;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+/* header-medium logo ka css starts */
+.mediumlogo{
+    background-color: white;
+    font-size:  35px;
+    font-weight: 900;
+    display: flex;
+    padding: 10px;
+    font-family: serif;
+    margin-left: 10px;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.searchbar{
+    display:flex;
+    padding: 5px;
+    margin-left: 15px;
+    border-radius: 20px;
+    background-color: #f7f7f7ab;
+    padding-left: 10px;
+    
+}
+.searchbar input{
+    background-color: #f7f7f7ab;
+    margin-left: 15px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+/* medium logo ka css ends */
+
+
+/* header-login info ka css starts */
+.loginInfo{
+    background-color: white;
+    display:flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 10px;
+}
+
+.write{
+    text-decoration: none;
+    color: #858585;
+    display: flex;
+    width: 64px;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 14px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.loginInfo a:hover{
+    color:rgb(58, 58, 58);
+}
+
+/* 
+This is called a CSS pseudo-class selector. Specifically:
+
+Selector: .loginInfo a:hover
+
+Property: color
+
+Pseudo-class: :hover
+*/
+
+.bellicon{
+    margin-left:30px;
+    text-decoration: none;
+    color: #858585;
+}
+
+.personIcon {
+    border-radius: 50px;
+    width: 37px;
+    height: 37px;
+    margin-left: 30px;
+}
+
+/* login info ka css ends */
+
+.blogs{
+    /* background-color: orange; */
+    padding:0;
+    width:76.3%;
+    /* margin:auto; */
+    margin-left:240px;
+    min-height: calc(100vh - 52px);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main-blogs ka css starts*/
+.main-blogs{
+    padding:0;
+    width:72%;
+    border-right: 2px solid rgb(240, 240, 240);
+}
+
+/* main-blogs ka css ends*/
+
+/* recommended-blogs ka css starts*/
+.recommended-blogs{
+    height:1360px;
+    width:30%;
+    /* background-color: aqua; */
+    position: sticky;
+    top:-583px;
+}
+/* recommended-blogs ka css ends*/
+
+.main-blogs-header{
+    height:75px;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    position: sticky;
+    top:-20px;
+    background-color: white;
+    display: flex;
+    align-items:end;
+}
+
+/* navbar of main blogs section starts*/
+.navbar{
+    height:55px;
+    width:80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap:28px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:#858585;
+    font-size: 14px;
+    font-family: sans-serif;
+    position: relative;
+    cursor: pointer;
+}
+.navbar a.active {
+    color: black;
+}
+.navbar a.active::after {
+    width: 100%;
+}
+.navbar a:hover{
+    color:rgb(58, 58, 58);
+}
+
+.navbar a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1.25px;
+    background: black;
+    position: absolute;
+    bottom: -20.5px; /* Distance from text */
+    left: 0%;
+    /* transform: translateX(-50%); */
+}
+/* navbar of main blogs section ends*/
+
+.content {
+    display: none;
+    padding: 0px;
+    margin:0px;
+}
+.content.active {
+    display: block;
+}
+
+.PlusSign{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    height: 25px;
+    width: 25px;
+    font-size: 25px !important;
+    font-weight: 100 !important;
+}
+.PlusSign:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 100px;
+}
+
+
+/* single main blogs ke card kee styling */
+.card{
+    /* background-color: aqua; */
+    width: 83%;
+    height: 250px;
+    margin-top:45px;
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+.cardE1{
+    display: flex;
+    align-items: center;
+}
+.cardE1E1{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    margin-right:15px;
+    border-radius: 50px;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+.cardE1E2{
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.cardE2{
+    display:flex;
+    align-items:start;
+    justify-content: space-between;
+    /* margin-top:10px; */
+}
+.cardE2E1{
+    /* background-color: aquamarine; */
+    margin-top: 20px;
+    width:65%;
+    height:170px;
+    padding-left:4px;
+}
+.cardE2E2{
+    height:110px;
+    width:160px;
+    margin-top: 20px;
+}
+.cardE2E1E3{
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:18px;
+    width: 100%;
+}
+.cardE2E1E3E1{
+    height:18px;
+    width:180px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color:#858585;
+}
+.cardE2E1E3E2{
+    height:18px;
+    width:120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#858585;
+}
+.cardheading{
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 9px;
+}
+.cardpara{
+    color: #858585;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-bottom: 45px;
+}
+
+/* single main bolgs ke card ke styling ends */
+
+
+/* recommended blogs ka css starts */
+/* staff picks ka css starts */
+.staffPicks{
+    height: 500px;
+    width:100%;
+    /* background-color: yellow; */
+    /* border: 1px solid red; */
+}
+.spheader{
+    /* background-color: aqua; */
+    margin:40px 0 24px 40px;
+    font-size: 15.8px;
+    letter-spacing: 0.35px;
+    font-weight: 500;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#242424;
+    line-height: 20px;
+}
+.spcard{
+    /* background-color: rgb(255, 255, 255); */
+    margin: 0 0 0 40px;
+    margin-bottom: 20px;
+}
+.spcardE1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.spcardE1E1{
+    height:23px;
+    width:23px;
+    border-radius: 50px;
+    margin-right: 10px;
+} 
+.spcardE1E2{
+    font-size: 13px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #242424;
+    line-height: 20px;
+}
+.spcardE2{
+    font-size: 16px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #242424;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.spcardE3{
+    font-size: 13px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #6B6B6B;
+    line-height: 20px;
+}
+.spfooter{
+    margin: 0 0 0 40px;
+    font-size: 14px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 370;
+    color: #6B6B6B;
+    line-height: 20px;
+}
+/* staff picks ka css ends */
+
+/* recommended topics ka css starts */
+.recommendedtopics{
+    height: 250px;
+    width:100%;
+    /* background-color: yellow; */
+    /* border: 1px solid red; */
+}
+.rtheader{
+    margin: 12px 0 30px 40px;
+    /* background-color: aqua; */
+    font-size: 16px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color:#242424;
+    line-height: 20px;
+}
+.rtgrid{
+    margin: 0 0 0 40px;
+    /* background-color: #ffb9b9; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.rtgridE{
+    border: 1px solid rgb(242, 242, 242);
+    padding: 8px 16px;
+    border-radius: 100px;
+    background-color: #F2F2F2;
+    color: #242424;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 300ms;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.rtgridEE1{
+    margin-right:10px;
+}
+.rtgridEE3{
+    margin-right:10px;
+}
+.rtgridEE5{
+    margin-right:10px;
+}
+.rtgridEE6{
+    margin-right:10px;
+}
+.rtfooter{
+    margin: 9px 0 0 39px;
+    /* background-color: rgb(207, 255, 255); */
+    font-size: 14px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 370;
+    color: #6B6B6B;
+    line-height: 20px;
+}
+/* recommended topics ka css ends */
+
+/* Who to follow ka css starts */
+.WhoToFollow{
+    height: 370px;
+    width:100%;
+    /* background-color: yellow; */
+    /* border: 1px solid red; */
+}
+.wfheader{
+    margin: 20px 0 0 40px;
+    /* background-color: aqua; */
+    font-weight: 500;
+    font-size: 15px;
+    color: #242424;
+    line-height: 20px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wfcard{
+    margin:15px 0 17px 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    width: 300px;
+    /* background-color: rgb(255, 172, 38); */
+}
+.wfcardE1{
+    height: 35px;
+    width: 35px;
+    border-radius:50px;
+}
+.wfcardE2{
+    /* background-color: antiquewhite; */
+    padding: 0;
+    width: 160px;
+}
+.wfcardE2E1{
+    font-weight: 700;
+    font-size: 16px;
+    color: #242424;
+    line-height: 20px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+.wfcardE2E2{
+    font-size:13px;
+    line-height: 20px;
+    color: #6B6B6B;
+    font-weight: 400;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wfcardE3{
+    padding: 6px 16px;
+    color: #242424;
+    width: 35px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 1px solid rgb(36,36,36);
+    border-radius: 20px;
+}
+.wffooter{
+    margin: 18px 0 0 39px;
+    /* background-color: rgb(207, 255, 255); */
+    font-size: 14px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 370;
+    color: #6B6B6B;
+    line-height: 20px;
+}
+/* Who to follow ka css ends */
+
+/* Reading List ka css starts */
+.ReadingList{
+    /* height: 190px; */
+    width:100%;
+    /* background-color: yellow; */
+    /* border: 1px solid red; */
+}
+.rlheader{
+    /* background-color: aqua; */
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #242424;
+    line-height: 20px;
+    margin: 10px 0 10px 40px;
+}
+.rlE1{
+    /* background-color: bisque; */
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777777;
+    line-height: 20px;
+    margin: 20px 0 22px 40px;
+}
+.rlE1E1{
+    position: absolute;
+    left: 97px;
+    bottom: 96px;
+}
+
+/* Reading List ka css ends */
+.recommendedblogs_footer{
+    /* background-color: rgb(250, 193, 255); */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 40px;
+    align-items: center;
+}
+.recommendedblogs_footer a{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #929292;
+    line-height: 16px;
+    margin-right: 8px;
+}
+/* recommended blogs ka footer starts */
+
+/* recommended blogs ka footer ends */
+
+/* recommended blogs ka css ends */
